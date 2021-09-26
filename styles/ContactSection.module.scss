@@ -1,0 +1,88 @@
+.contactsection {
+    margin-top: 200px;
+    padding: 20px;
+    min-height: 100vh ;
+    .headingcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::after {
+            position: absolute ;
+            content: '';
+            top: 48px;
+            height: 51px;
+            border-left: 1px white solid;
+        }
+        h1 {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px white solid;
+            padding: 8px;
+            &::after {
+                position: absolute ;
+                top: -1px;
+                content: '';
+                height: 48px;
+                width: 120px;
+                border-top: 1px white solid;
+                border-bottom: 1px white solid;
+            }
+        }
+    }
+    .container {
+        margin-top: 51px;
+        padding-top: 50px;
+        border-top: 1px white solid ;
+
+        .content {
+            p {
+                font-size: 14px;
+                color: white;
+                text-align: justify;
+                padding: 0 10px;
+            }
+            .p {
+                margin-top: 13px;
+            }
+        }
+        .forms {
+            margin-top: 100px;
+        }
+    }
+}
+
+
+@media (min-width: 688px) {
+    .contactsection {
+        .headingcontainer {
+            &::after {}
+            h1 {
+                &::after {}
+            }
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .content {
+                p {}
+                .p {}
+            }
+            .forms {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 250px;
+    padding: 20px;
+    position: relative;
+    border: 2px white solid;
+    &::after {
+        position: absolute ;
+        bottom: -50px;
+        content: '';
+        height: 530px;
+        width: 250px;
+        border-left: 2px white solid;
+        border-right: 2px white solid;
+    }
+    &::before {
+        content: "";
+        position: absolute ;
+        bottom: -2px;
+        height: 10px;
+        width: 300px;
+        border-bottom: 2px white solid;
+    }
+    h5 {
+        font-size: 15px;
+        color: #ff2768;
+        text-align: center;
+        line-height: 5px;
+        margin-top: 10px;
+    }
+    label {
+        color: white;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        color: white;
+        padding: 5px;
+        font-size: 13px;
+        background: transparent;
+        border: none;
+        border: 1.5px white solid;
+        transition: all 0.3s ease-in-out;
+        &:focus {
+            outline: none;
+            border: 2px pink solid;
+        }
+    }
+
+    ::placeholder {
+        color: white;
+    }
+    textarea {
+        height: 200px;
+    }
+    .submit {
+        margin-top: 20px;
+        &:hover {
+            background: #ff000040;
+        }
+    }
+}
