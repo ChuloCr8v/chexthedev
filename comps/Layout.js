@@ -1,4 +1,4 @@
-import Header from './Header'
+
 import Menu from './Menu'
 import MobileMenu from './MobileMenu'
 import SocialIcons from './SocialIcons'
@@ -15,7 +15,6 @@ const Layout = ({children}) => {
   
   return(
     <main class="" >
-      <Header />
       <SocialIcons />
       {children} 
       <div className="flex justify-around fixed ml-10 bottom-8">

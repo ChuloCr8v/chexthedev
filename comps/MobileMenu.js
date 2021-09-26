@@ -6,22 +6,22 @@ import {AnimatePresence} from 'framer-motion'
 const MobileMenu= () => {
   return(
     <AnimatePresence >
-    <motion.nav class="border-2 bg-blur-300 bg-black border-white px-4 py-1"
+    <motion.nav className="border-2 bg-blur-300 bg-black border-white px-4 py-1"
     initial = {{ x: -50, opacity: 0}} 
     animate = {{ x: 20, opacity: 1 }} 
     exit = {{ x: -20, opacity: 0}} 
     transition = {{ type: "spring", stiffness: 200}} 
     >
-      <ul class="flex justify-center items-center space-x-3">
+      <ul className="flex justify-center items-center space-x-3">
         
-        <li class="text-white text-md text-center hover:text-pink-600 duration-300 ">
+        <li className="text-white text-md text-center hover:text-pink-600 duration-300 ">
           <Link href="/aboutme"> 
           About 
    
           </Link>
         </li>
         
-        <li class="text-white text-md text-center hover:text-pink-600 duration-300"  >
+        <li className="text-white text-md text-center hover:text-pink-600 duration-300"  >
           <Link href="/mystacks"> 
      
           Skills 
@@ -29,14 +29,14 @@ const MobileMenu= () => {
           </Link>
         </li>
         
-        <li class="text-white text-md text-center hover:text-pink-600 duration-300" >
+        <li className="text-white text-md text-center hover:text-pink-600 duration-300" >
           <Link href="/myportfolio"> 
     
           Portfolio 
           </Link>
         </li>
         
-        <li class="text-white text-md text-center hover:text-pink-600 duration-300" >
+        <li className="text-white text-md text-center hover:text-pink-600 duration-300" >
           <Link href="/contactme">
         
           Contact 

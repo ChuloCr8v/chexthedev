@@ -10,7 +10,7 @@ import ContactSection from '../comps/ContactSection'
 
 export default function Index() {
   return (
-  <div class="" >
+  <div>
    <HeroSection />
    <About />
    <Skills />
