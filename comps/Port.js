@@ -34,6 +34,17 @@ const Ports = [
       featureFour: "Features a responsive gallery."
     }, 
     {
+      title: 'Shop 24Seven', 
+      img: '/../public/shop.jpg', 
+      github: "https://github.com/ChuloCr8v/shop24seven.github.io", 
+      demo: "https://shop24seven.netlify.app/", 
+      description: "This is template of an online store. It features only the landing page and no additional features.", 
+      featureOne: "Built With HTML5 and CSS3", 
+     featureTwo: "JavaScript for basic features.", 
+      featureThree: "Mobile Responsive.", 
+      featureFour: "Features a responsive product gallery."
+    }, 
+    {
       title: 'Blogr Landing Page', 
       img: '/../public/blogr.jpg', 
       github: "https://github.com/ChuloCr8v/blogr-landing-page.github.io", 

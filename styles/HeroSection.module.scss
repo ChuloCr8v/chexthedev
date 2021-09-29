@@ -6,7 +6,7 @@
     padding: 50px 20px;
     min-height: 100vh;
     margin-bottom: 200px;
-
+    overflow-x: hidden;
     .logocontainer1, .logocontainer2 {
         height: 105px;
         width: 105px;
@@ -98,8 +98,21 @@
                         0% {
                             transform: translateX(200px);
                         }
-                        100% {
+
+                        25% {
                             transform: translateX(-200px);
+                        }
+
+                        50% {
+                            transform: translateX(-200px);
+                        }
+
+                        75% {
+                            transform: translateX(200px);
+                        }
+
+                        100% {
+                            transform: translateX(0);
                         }
                     }
                 }
