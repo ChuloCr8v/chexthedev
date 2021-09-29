@@ -2,6 +2,7 @@
     margin-top: 200px;
     padding: 20px;
     min-height: 100vh ;
+    padding-bottom: 100px;
     .headingcontainer {
         display: flex;
         flex-direction: column;
@@ -11,44 +12,22 @@
         &::after {
             position: absolute ;
             content: '';
-            top: 48px;
-            height: 51px;
-            border-left: 1px white solid;
-        }
-        h1 {
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 1px white solid;
-            padding: 8px;
-            &::after {
-                position: absolute ;
-                top: -1px;
-                content: '';
-                height: 48px;
-                width: 120px;
-                border-top: 1px white solid;
-                border-bottom: 1px white solid;
-            }
+            bottom: -51px;
+            min-height: 51px;
+            border-left: 2px white solid;
         }
     }
     .container {
         margin-top: 51px;
         padding-top: 50px;
-        border-top: 1px white solid ;
+        border-top: 2px white solid ;
 
         .content {
+            padding: 20px;
             p {
-                font-size: 14px;
+                font-size: calc(10px + 0.5vh);
                 color: white;
-                text-align: justify;
-                padding: 0 10px;
+                text-align: center;
             }
             .p {
                 margin-top: 13px;

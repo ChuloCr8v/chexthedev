@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 200px;
-    padding: 20px;
+    padding: calc(20px + 0.5vh);
     .headingcontainer {
         display: flex;
         flex-direction: column;
@@ -14,45 +14,50 @@
         &::after {
             position: absolute ;
             content: '';
-            top: 51px;
-            height: 51px;
-            border-left: 1px white solid;
-        }
-        h1 {
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            border: 1px white solid;
-            padding: 10px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &::after {
-                position: absolute ;
-                content: '';
-                height: 51px;
-                width: 160px;
-                border-top: 1px white solid;
-                border-bottom: 1px white solid;
-            }
+            bottom: -51px;
+            min-height: 51px;
+            border-left: 2px white solid;
         }
     }
     .list {
         margin-top: 51px;
-        padding: 100px 0;
-        border-top: 1px white solid ;
-        border-bottom: 1px white solid ;
+        padding:  calc(16px + 0.5vh);
+
+        border-top: 2px white solid ;
+        border-bottom: 2px white solid ;
         .item {
             padding: 10px;
             margin: 50px 10px;
             margin-bottom: 100px;
-            border: 1px white solid;
+            border: 2px white solid;
             position: relative;
+            transition: all 0.3s;
+            &:hover {
+                color: yellow;
+                border: 2px yellow solid;
+                transform: scale(1.05);
+                .img {
+                    border: 2px yellow solid;
+                    //margin: 10px;
+                }
+                .icons {
+                    .icon, .icon2 {
+                        bottom: -2px;
+
+                        border: 2px yellow solid ;
+                    }
+                    .icon2 {
+                        right: -2px;
+                    }
+                    .icon {
+                        left: -2px;
+                    }
+                }
+            }
             .img {
                 padding: 10px;
-                border: 1px white solid  ;
+                border: 2px white solid  ;
+                transition: all 0.3s ;
             }
             .description {
                 display: flex;
@@ -74,7 +79,7 @@
                     justify-content: center;
                     align-items: center;
                     padding: 4px 8px;
-                    border: 1px white solid;
+                    border: 2px white solid;
                 }
                 h2 {
                     margin-top: 40px;
@@ -105,14 +110,13 @@
                     font-size: 35px;
                     color: white;
                     font-weight: bold;
-                    border: 1px white solid;
+                    border: 2px white solid;
                     padding: 6px;
                     transition: all 0.3s ease-in-out;
                     &:hover {
                         transform: scale(1.1);
                         color: #232b34;
-                        border: 1px white solid;
-                        background: white;
+                        background: yellow;
                     }
                 }
                 .icon2 {
@@ -131,44 +135,19 @@
 
 @media (min-width: 688px) {
     .portfolio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 200px;
-        padding: 20px;
+        
         .headingcontainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+           
             &::after {
                 position: absolute ;
                 content: '';
                 top: 51px;
                 height: 51px;
-                border-left: 1px white solid;
+                border-left: 2px white solid;
             }
             h1 {
-                color: white;
-                font-size: 20px;
-                font-weight: bold;
-                border: 1px white solid;
-                padding: 10px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                &::after {
-                    position: absolute ;
-                    content: '';
-                    height: 51px;
-                    width: 160px;
-                    border-top: 1px white solid;
-                    border-bottom: 1px white solid;
-                }
+
+                &::after {}
             }
         }
         .list {
@@ -177,9 +156,11 @@
             .item {
                 padding: 0;
                 margin: 40px;
-                border: 1px white solid;
+                border: 2px white solid;
                 position: relative;
-
+                .img {
+                    padding: 10px;
+                }
                 .description {
                     display: flex;
                     flex-direction: column;
@@ -199,7 +180,84 @@
                         justify-content: center;
                         align-items: center;
                         padding: 4px 8px;
-                        border: 1px white solid;
+                        border: 2px white solid;
+                    }
+                    h2 {
+                        margin-top: 40px;
+                    }
+                    p {
+                        text-align: justify;
+                        color: white;
+                        font-size: 14px;
+                    }
+                    ol {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 10px 0;
+                        margin-bottom: 20px;
+                        li {
+                            color: yellow ;
+                            font-size: 13px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .portfolio {
+        
+        .headingcontainer {
+           
+            &::after {
+                position: absolute ;
+                content: '';
+                top: 51px;
+                height: 51px;
+                border-left: 2px white solid;
+            }
+            h1 {
+
+                &::after {}
+            }
+        }
+        .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .item {
+                padding: 0;
+                margin: 40px;
+                border: 2px white solid;
+                position: relative;
+                .img {
+                    padding: 10px;
+                }
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                    h1, h2 {
+                        text-align: center;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        font-size: 15px;
+                        margin: 10px;
+                        position: relative ;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 4px 8px;
+                        border: 2px white solid;
                     }
                     h2 {
                         margin-top: 40px;

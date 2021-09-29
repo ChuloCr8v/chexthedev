@@ -1,0 +1,31 @@
+.socialicons {
+  //background: rgb(0,0,0,0.5);
+ // width: 40px;
+  overflow: hidden;
+  display: flex;
+ // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  
+  .icon {
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    //margin: 10px auto;
+   // margin-right: 14px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-4px);
+      color: #069ce5;
+    }
+  }
+}
+
+@media (min-width: 788px) {
+  .socialicons {
+    .icon {
+      font-size: 50px;
+    }
+  }
+}

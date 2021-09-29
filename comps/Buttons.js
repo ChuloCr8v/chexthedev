@@ -5,16 +5,16 @@ import styles from '../styles/Buttons.module.scss'
 
 
 
-const  Buttons = ({text, textOne}) => {
+const  Buttons = ({contact, setContact}) => {
   return(
     <div className={styles.buttons}>
         <div className={styles.buttoncontainer}>
           <button className={styles.button}>
-            <Link href="" >My Resume</Link>
+            <Link href="https://drive.google.com/file/d/1oLBAApnT3-q9nQs9UzzkOHz8Lk3tVNm3/view?usp=drivesdk" >My Resume</Link>
           </button>
         </div>
         <div className={styles.buttoncontainer}>
-          <button className={styles.button}>
+          <button className={styles.button} onClick={() => setContact(!contact)}  >
             <Link href="">Contact Me</Link>
           </button>
         </div>

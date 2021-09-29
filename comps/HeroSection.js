@@ -2,10 +2,17 @@ import Logo from '../public/logo.jpg'
 import Image from 'next/image'
 import Buttons from './Buttons'
 import styles from '../styles/HeroSection.module.scss'
-import {FaTwitter, FaGithub, FaLinkedin, FaHtml5, FaCss3, FaJs, FaWordpress, FaReact, FaPenNib} from 'react-icons/fa'
+import {FaTwitter, FaGithub, FaLinkedin, FaHtml5, FaCss3, FaJs, FaWordpress, FaReact, FaPenNib, FaTimes } from 'react-icons/fa'
+import ContactCard from './ContactCard'
+import ContactForm from './ContactForm'
+import {motion} from 'framer-motion'
+import {useState} from 'react'
 
 
 const HeroSection = () => {
+
+     const [contact, setContact] = useState(false) 
+     
   return(
     <div className={styles.herosection}>
         <div className={styles.logocontainer1}>
@@ -21,8 +28,17 @@ const HeroSection = () => {
             <h2> WordPress Developer </h2>
             <h2> Content Creator </h2>
           </div>
-          <Buttons />
-          
+          <Buttons contact={contact} setContact={setContact} />
+          {contact && <div className={styles.formcontainer} >
+            <FaTimes onClick={() => setContact(false)} className={styles.icon} /> 
+            <motion.div className={styles.forms}
+            initial = {{ y: 20}} 
+            animate = {{y: 0}}
+          >
+            <ContactForm />
+            <ContactCard />
+            </motion.div>
+            </div>} 
           <div className={styles.stacks}>
             <span className={styles.icons}>
               <FaHtml5 className={styles.icon} />

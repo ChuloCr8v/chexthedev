@@ -5,7 +5,7 @@ const Skills = () => {
   return(
     <div className={styles.skills}>
       <div className={styles.heading}>
-        <h1> Skills and Stacks </h1>
+        <Heading text={"My Skills & Stacks"} />
       </div>
       <div className={styles.container}>
          <div className={styles.frontend}>

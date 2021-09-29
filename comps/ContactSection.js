@@ -2,13 +2,14 @@ import styles from "../styles/ContactSection.module.scss";
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 import { useEffect } from "react";
+import Heading from './Heading'
 
 const ContactSection = () => {
   return (
     <>
       <div className={styles.contactsection}>
+        <Heading text={'Connect'} />
       <div className={styles.headingcontainer}>
-      <h1> Connect </h1>
       </div>
         <div className={styles.container}>
           <div className={styles.content}>

@@ -1,13 +1,14 @@
 import styles from '../styles/Portfolio.module.scss' 
 import Ports from './Port'
 import Image from 'next/image'
+import Heading from './Heading'
 import {FaGlobe, FaGithub} from 'react-icons/fa'
 
 const Portfolio = () => {
   return(
     <div className={styles.portfolio}>
     <div className={styles.headingcontainer} >
-      <h1> My Portfolio </h1>
+      <Heading text={'My Portfolio'} />
     </div>
       <div className={styles.list}>
         {Ports.map(port => (
