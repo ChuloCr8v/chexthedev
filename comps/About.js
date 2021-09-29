@@ -4,10 +4,19 @@ import Heading from './Heading'
 import Logo from '../public/logocrop.png'
 import Image from 'next/image'
 import {FaBolt, FaPenNib, FaPalette, FaLightbulb} from 'react-icons/fa'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import {useEffect} from 'react'
+
 
 const About = () => {
+    
+     useEffect(() => {
+        Aos.init({duration: 1000});
+     })
+      
   return(
-    <div className={styles.about}>
+    <div data-aos="slide-up" className={styles.about}>
       <div className={styles.headingcontainer} >
         <Heading text={'About Me'} />
       </div>
@@ -17,7 +26,7 @@ const About = () => {
           I am a front-end developer currently working with <span className={styles.one}>JavaScript,</span> <span>React.js</span> and <span className={styles.three}>Next.js.</span> I am an aspiring full-stack developer with interest in Nodejs and Python. I am <span className={styles.four}>Dedicated</span> to Learning, open to opportunities and always willing to take up a <span className={styles.two}>challenge. </span>I am passionate about <span>writing</span> as much as I am about building things and designing concepts. I am always <span  className={styles.one}>willing to learn</span> new concepts and can <span className={styles.three}>fit</span> into any environment. 
          </p>
 
-         <p>
+         <p data-aos="slide-up">
           I am Nkematu Bonaventure. Besides my being passionate about writing, I have always had a flair for designs and building stuffs. And then I thought, where else to better implement these skills if not here. Now, I am interested in helping individuals and companies proffer solutions to their online business needs.
         </p>
       </div>
@@ -26,7 +35,7 @@ const About = () => {
       <div className={styles.list} > 
           
            
-         <div className={styles.item} >
+         <div data-aos="slide-left" className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaPalette className={styles.logo} />
@@ -41,7 +50,7 @@ const About = () => {
           
         </div>
          
-         <div className={styles.item} >
+         <div data-aos="slide-right" className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaBolt className={styles.logo} />
@@ -55,7 +64,7 @@ const About = () => {
            </div>
         </div>
          
-         <div className={styles.item} >
+         <div data-aos="slide-up"  className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaPenNib className={styles.logo} />
@@ -69,7 +78,7 @@ const About = () => {
            </div>
         </div>
         
-           <div className={styles.item} >
+           <div data-aos="slide-left" className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaLightbulb className={styles.logo} />

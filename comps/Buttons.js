@@ -2,10 +2,8 @@ import Link from 'next/link'
 import {motion} from 'framer-motion'
 import styles from '../styles/Buttons.module.scss'
 
-
-
-
 const  Buttons = ({contact, setContact}) => {
+    
   return(
     <div className={styles.buttons}>
         <div className={styles.buttoncontainer}>

@@ -5,6 +5,7 @@
     align-items: center;
     margin-top: 200px;
     padding: calc(20px + 0.5vh);
+    overflow: hidden;
     .headingcontainer {
         display: flex;
         flex-direction: column;
@@ -135,9 +136,9 @@
 
 @media (min-width: 688px) {
     .portfolio {
-        
+
         .headingcontainer {
-           
+
             &::after {
                 position: absolute ;
                 content: '';
@@ -212,9 +213,9 @@
 
 @media (min-width: 1200px) {
     .portfolio {
-        
+
         .headingcontainer {
-           
+
             &::after {
                 position: absolute ;
                 content: '';
