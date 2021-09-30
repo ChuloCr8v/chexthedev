@@ -2,8 +2,8 @@ import Skills from '../comps/Skills'
 
 const aboutme = () => {
   return(
-    <div>
-        <Skills />
+    <div className="pt-56">
+        <Skills className="" />
     </div>
     )
 }

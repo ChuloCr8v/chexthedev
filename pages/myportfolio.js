@@ -2,7 +2,7 @@ import Portfolio from '../comps/Portfolio'
 
 const aboutme = () => {
   return(
-    <div>
+    <div className="pt-56">
         <Portfolio />
     </div>
     )

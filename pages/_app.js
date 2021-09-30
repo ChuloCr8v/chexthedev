@@ -1,4 +1,4 @@
-import Layout from '../comps/Layout' 
+import Layout from '../pages/layout/Layout' 
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.css'
 import AOS from 'aos'; 
