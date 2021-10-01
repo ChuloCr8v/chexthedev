@@ -15,22 +15,22 @@ const Footer = () => {
         
         <a href="https://www.github.com/ChuloCr8v" target="_blank" rel="noopener noreferrer">
             <div 
-              className="group icon-contain transition-all 3000 border-2 border-white p-1 hover:border-gray-800 transform hover:translate-x-10 ">
-              <FaGithub className="group-hover:text-gray-800 text-white text-xl" />
+              className="group icon-contain transition-all 3000 border-2 border-white p-1 hover:border-yellow-400 transform hover:translate-x-10 ">
+              <FaGithub className="group-hover:text-yellow-400 text-white text-xl" />
             </div>
          </a>
           
         <a href="https://www.linkedin.com/in/bonaventure-nkematu-77b563148" target="_blank" rel="noopener noreferrer">
             <div
-              className="group icon-contain transition-all 3000 border-2 border-white p-1 hover:border-gray-800 transform hover:translate-x-10">
-              <FaLinkedin className="group-hover:text-gray-800 text-white text-xl" />
+              className="group icon-contain transition-all 3000 border-2 border-white p-1 hover:border-yellow-400 transform hover:translate-x-10">
+              <FaLinkedin className="group-hover:text-yellow-400 text-white text-xl" />
             </div>
         </a>
         
         <a href="https://www.twitter.com/ChuloCr8v" target="_blank" rel="noopener noreferrer">
             <div
-              className="group icon-contain transition-all 3000 border-2 border-white p-1 hover:border-gray-800 transform hover:translate-x-10">
-                <FaTwitter className="group-hover:text-gray-800 text-white text-xl" />
+              className="group icon-contain transition-all 3000 border-2 border-white p-1 hover:border-yellow-400 transform hover:translate-x-10">
+                <FaTwitter className="group-hover:text-yellow-400 text-white text-xl" />
             </div>
         </a>
        
