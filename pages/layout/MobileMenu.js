@@ -6,7 +6,7 @@ import {AnimatePresence} from 'framer-motion'
 const MobileMenu= () => {
   return(
     <AnimatePresence >
-    <motion.nav className="border-2 border-white relative z-20 px-4 py-1"
+    <motion.nav className="border-2 border-white relative z-40 px-4 py-1"
     initial = {{ x: -50, opacity: 0}} 
     animate = {{ x: 20, opacity: 1 }} 
     exit = {{ x: -20, opacity: 0}} 
