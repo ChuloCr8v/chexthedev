@@ -1,7 +1,5 @@
 import {FaHome} from 'react-icons/fa'
 import styles from '../styles/Index.module.scss'
-import Image from 'next/image'
-import Bg from '../public/bgimg.jpg'
 import HeroSection from '../comps/HeroSection'
 import About from '../comps/About'
 import Skills from '../comps/Skills'
