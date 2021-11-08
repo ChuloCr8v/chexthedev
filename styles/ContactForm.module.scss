@@ -1,71 +1,74 @@
-.contactform {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 40px;
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  margin: 100px 20px;
+  position: relative;
+  border: 2px white solid;
+  padding: 20px;
+  &::before {
+    position: absolute ;
+    bottom: -55px;
+    content: '';
+    min-height: 10%;
+    min-width: 110%;
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+  }
+  &::after {
+    content: "";
+    position: absolute ;
+    bottom: -2px;
+    min-height: 20px;
+    min-width: 120%;
+    border-bottom: 2px white solid;
+  }
+  h5 {
+    font-size: 15px;
+    color: yellow;
+    text-align: center;
+    line-height: 5px;
+    margin: 10px 0;
+  }
+  .form_control {
+    width: 100%;
+    margin: 10px 0;
+  }
+  label {
+    color: white;
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  input,
+  textarea {
     position: relative;
-    border: 2px white solid;
-    padding: 20px;
-    min-width: calc(300px + 0.5vh);
-    &::before {
-        position: absolute ;
-        bottom: -50px;
-        content: '';
-        min-height: 10%;
-        min-width: 110%;
-        border-left: 2px white solid;
-        border-right: 2px white solid;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    font-size: calc(8px + 0.5vh);
+    background: transparent;
+    border: none;
+    border: 1.5px white solid;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    &:focus {
+      outline: none;
+      border: 2px yellow solid;
     }
-    &::after {
-        content: "";
-        position: absolute ;
-        bottom: -2px;
-        min-height: 20px;
-        min-width: 120%;
-        border-bottom: 2px white solid;
-    }
-    h5 {
-        font-size: 15px;
-        color: yellow;
-        text-align: center;
-        line-height: 5px;
-        margin-top: 10px;
-    }
-    label {
-        color: white;
-        margin: 10px 0;
-        font-size: 13px;
-    }
-    input,
-    textarea {
-        max-width: 100%;
-        position: relative;
-        width: 100%;
-        color: white;
-        padding: 5px;
-        font-size: calc(8px + 0.5vh);
-        background: transparent;
-        border: none;
-        border: 1.5px white solid;
-        transition: all 0.3s ease-in-out;
-        &:focus {
-            outline: none;
-            border: 2px yellow solid;
-        }
-    }
+  }
 
-    ::placeholder {
-        color: white;
+  ::placeholder {
+    color: white;
+  }
+  textarea {
+    height: 200px;
+  }
+  .submit {
+    margin-top: 20px;
+    &:hover {
+      border: 2px yellow solid;
+      color: yellow;
     }
-    textarea {
-        height: 200px;
-    }
-    .submit {
-        margin-top: 20px;
-        &:hover {
-            border: 2px yellow solid;
-            color: yellow;
-        }
-    }
+  }
 }

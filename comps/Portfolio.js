@@ -28,13 +28,22 @@ const Portfolio = () => {
             <div className={styles.description}>
               <h1>{port.title} </h1>
               <p>{port.description} </p>
+              <div className={styles.stacks_container}>
+                <h2>Stacks Used</h2>
+                <ul className={styles.stacks}>
+                  <li className={styles.stack}>{port.stackOne}</li>
+                  <li className={styles.stack}>{port.stackTwo}</li>
+                  <li className={styles.stack}>{port.stackThree}</li>
+                  <li className={styles.stack}>{port.stackFour}</li>
+                </ul>
+              </div>
               <h2>Features</h2>
-              <ol className={styles.features}>
-                <li>{port.featureOne} </li>
-                <li>{port.featureTwo} </li>
-                <li>{port.featureThree} </li>
-                <li>{port.featureFour} </li>
-              </ol>
+              <ul className={styles.features}>
+                <li className={styles.feature}>{port.featureOne} </li>
+                <li className={styles.feature}>{port.featureTwo} </li>
+                <li className={styles.feature}>{port.featureThree} </li>
+                <li className={styles.feature}>{port.featureFour} </li>
+              </ul>
             </div>
               <div className={styles.icons}>
                 <a href={port.demo} target="_blank" rel="noopener noreferrer">

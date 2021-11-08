@@ -1,92 +1,83 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px auto;
+  align-items: center;
+  .contactcard {
+    max-height: calc(250px + 0.5vh);
+    width: 300px;
+    border: 2px white solid;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin: 20px auto;
+    justify-content: center;
     align-items: center;
-    .contactcard {
-        max-height: calc(250px + 0.5vh);
-        min-width: calc(230px + 0.5vh);
-        border: 2px white solid;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        &::after {
-            position: absolute ;
-            content: '';
-            height: 120%;
-            width: 130%;
-            border-top: 2px white solid;
-            border-bottom: 2px white solid;
-        }
-        &::before {
-            position: absolute ;
-            content: '';
-            height: 140%;
-            width: 110%;
-            border-right: 2px white solid;
-            border-left: 2px white solid;
-        }
-        img {
-            max-height: 25px;
-            max-width: 25px;
-            position: absolute;
-            right: 20px;
-            top: 20px;
-        }
-        .details {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .name {
-                margin-left: -70px;
-                margin-top: 10px;
-                h5 {
-                    font-size: calc(5px + 0.5vh) ;
-                    color: yellow;
-                    letter-spacing: 2px;
-                    line-height: calc(10px + 0.5vh);
-                    span {
-                        margin-top: 2px;
-                    }
-                }
-                p {
-                    color: white;
-                    font-size: calc(13px + 0.5vh);
-                    line-height: calc(10px + 0.5vh);
-                    margin-bottom: 8px;
-                }
-            }
-        }
-
-        .contact {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            span {
-                display: flex;
-                align-items: center;
-                font-size: calc(5px + 0.4vh);
-                margin-top: 5px;
-                margin-right: 8px;
-            }
-            .icon, .phone {
-                font-size: calc(5px + 0.5vh);
-                color: white;
-                margin-right: 5px;
-            }
-            .phone {
-                transform: rotate(90deg);
-            }
-            p {
-                color: white;
-            }
-        }
-
+    padding: 20px;
+    &::after {
+      position: absolute ;
+      content: '';
+      height: 120%;
+      width: 130%;
+      border-top: 2px white solid;
+      border-bottom: 2px white solid;
     }
+    &::before {
+      position: absolute ;
+      content: '';
+      height: 140%;
+      width: 110%;
+      border-right: 2px white solid;
+      border-left: 2px white solid;
+    }
+    img {
+      max-height: 25px;
+      max-width: 25px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    .details {
+      width: 100%;
+      .name {
+        margin-top: 10px;
+        .surname,
+        .first_name {
+          font-size: 15px;
+          color: white;
+        }
+        .card_roles {
+          font-size: 12px;
+          color: yellow;
+          span {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+
+  }
+  .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    span {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+    .icon {
+      font-size: 13px;
+      color: white;
+      margin-right: 5px;
+      color: white;
+    }
+    .email,
+    .number {
+      font-size: 13px;
+      color: yellow;
+    }
+  }
 }

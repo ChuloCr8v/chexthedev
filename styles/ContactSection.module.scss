@@ -1,70 +1,69 @@
 .contactsection {
-    padding-top: 200px;
-    padding: 20px;
-    min-height: 100vh ;
-    padding-bottom: 100px;
-    overflow-x: hidden;
+  padding: 20px;
+  min-height: 100vh ;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+  .headingcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    z-index: 0;
-    .headingcontainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        &::after {
-            position: absolute ;
-            content: '';
-            bottom: -51px;
-            min-height: 51px;
-            border-left: 2px white solid;
-        }
+    &::after {
+      position: absolute ;
+      content: '';
+      bottom: -51px;
+      min-height: 51px;
+      border-left: 2px white solid;
     }
-    .container {
-        margin-top: 51px;
-        padding-top: 50px;
-        border-top: 2px white solid ;
+  }
+  .container {
+    margin-top: 51px;
+    padding-top: 50px;
+    border-top: 2px white solid ;
 
-        .content {
-            padding: 20px;
-            p {
-                font-size: calc(10px + 0.5vh);
-                color: white;
-                text-align: center;
-            }
-            .p {
-                margin-top: 13px;
-            }
-        }
-        .forms {
-            margin-top: 100px;
-        }
+    .content {
+      padding: 20px;
+      p {
+        font-size: calc(10px + 0.5vh);
+        color: white;
+        text-align: center;
+      }
+      .p {
+        margin-top: 13px;
+      }
     }
+    .forms {
+      margin-top: 100px;
+    }
+  }
 }
 
 
 @media (min-width: 688px) {
-    .contactsection {
-        .headingcontainer {
-            &::after {}
-            h1 {
-                &::after {}
-            }
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .content {
-                p {}
-                .p {}
-            }
-            .forms {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 50px;
-            }
-        }
+  .contactsection {
+    .headingcontainer {
+      &::after {}
+      h1 {
+        &::after {}
+      }
     }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .content {
+        p {}
+        .p {}
+      }
+      .forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+      }
+    }
+  }
 }

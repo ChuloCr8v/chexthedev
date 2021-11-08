@@ -1,4 +1,54 @@
-.rotate {
-    transform: rotate(45deg);
-    transition: all 0.3s ease-in-out;
+.menu {
+  .menu_icon {
+    background: white;
+    padding: 5px;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 5px;
+    &:hover,
+    &:focus
+    &:active {
+      background: black;
+      color: white;
+    }
+  }
+  .bg_change_icons {
+    display: flex;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 4px;
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    padding: 5px;
+    width: 50px;
+    overflow: hidden;
+    z-index: 999;
+    .icon,
+    .icon_moon {
+      font-size: 20px;
+      color: yellow;
+      margin: 0 auto;
+    }
+    .icon_moon {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 688px) {
+  .menu {
+    .menu_icon {
+      display: none;
+    }
+    .bg_change_icons {
+      top: 150px;
+      z-index: 100;
+    }
+  }
 }

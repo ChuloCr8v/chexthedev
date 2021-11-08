@@ -1,14 +1,29 @@
+import style from '../../styles/Menu.module.scss'
+import {FaBars, FaSun, FaMoon } from 'react-icons/fa'
 
 
-const Menu = ({onShow, showMenu}) => {
-  return(
-    <div onClick={onShow} className=" bg-black grid grid-cols-2 gap-0.5 relative z-20 border-2 border-white p-1 ">
-        <div className="box h-3 w-3 bg-black border-2 border-white "> </div>
-        <div className="box h-3 w-3 bg-white border-2 border-white "> </div>
-        <div className="box bg-white h-3 w-3 border-2 border-white "> </div>
-        <div className="box bg-black h-3 w-3 border-2 border-white "> </div>
-    </div>  
-    )
+const Menu = ({onShow, showMenu, bgChange, darkMode}) => {
+  
+  
+  return (
+    <div className={style.menu}>
+      <FaBars onClick={onShow} className={style.menu_icon} />
+      <div className={style.bg_change_icons}>
+        {darkMode && 
+          <FaSun 
+            className={style.icon} 
+            onClick={bgChange} 
+          />
+        } 
+        {!darkMode && 
+          <FaMoon 
+            className={style.icon && style.icon_moon} 
+            onClick={bgChange} 
+          />
+        } 
+      </div>
+    </div>
+    ) 
 }
 
 export default Menu

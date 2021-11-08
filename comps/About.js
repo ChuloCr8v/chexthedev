@@ -35,7 +35,7 @@ const About = () => {
       <div className={styles.list} > 
           
            
-         <div data-aos="slide-left" className={styles.item} >
+         <div data-aos="slide-up" className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaPalette className={styles.logo} />
@@ -50,7 +50,7 @@ const About = () => {
           
         </div>
          
-         <div data-aos="slide-right" className={styles.item} >
+         <div data-aos="slide-up" className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaBolt className={styles.logo} />
@@ -78,14 +78,14 @@ const About = () => {
            </div>
         </div>
         
-           <div data-aos="slide-left" className={styles.item} >
+           <div data-aos="slide-up" className={styles.item} >
            <div className={styles.logocontainer1}>
               <div className={styles.logocontainer2}>
                 <FaLightbulb className={styles.logo} />
                </div>
            </div>
            <div className={styles.subhead}>
-              <h1 class={styles.h3}> Creative Powers</h1>
+              <h1 className={styles.h3}> Creative Powers</h1>
            </div>
            <div className={styles.details}>
               <p> I possess the ability to critically analyze concepts while turning them into creative outputs.</p>

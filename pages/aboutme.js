@@ -1,5 +1,5 @@
 import About from '../comps/About'
-
+import ContactForm from '../comps/ContactForm'
 const aboutme = () => {
      
   return(

@@ -58,17 +58,17 @@ const HeroSection = () => {
             initial = {{x: -50, opacity: 0}}
             animate = {{x:  0, opacity: 1}}
             transition = {{delay: 2, type:"spring", stiffness:"200"}}
-            > Front-End Developer </motion.h2>
+            > Front-End Developer, </motion.h2>
             <motion.h2
             initial = {{x: 50, opacity: 0}}
             animate = {{x:  0, opacity: 1}}
             transition = {{delay: 2.3, type:"spring", stiffness:"200"}}
-            >  WordPress Developer </motion.h2>
+            >  WordPress Developer,  </motion.h2>
             <motion.h2
             initial = {{x: -50, opacity: 0}}
             animate = {{x:  0, opacity: 1}}
             transition = {{delay: 2.6, type:"spring", stiffness:"200"}}
-            >  Content Creator </motion.h2>
+            >  Content Creator... </motion.h2>
           </div>
           <motion.div
             initial = {{y: -30, opacity: 0}}

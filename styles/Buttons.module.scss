@@ -1,62 +1,45 @@
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    overflow: hidden;
-    .buttoncontainer {
-        .button {
-            min-height: calc(12px + 0.5vh);
-            min-width: calc(100% - 10px);
-            padding: 2px 10px;
-            margin: 10px;
-            overflow: hidden;
-            position: relative;
-            transition: all 0.3s ease-in-out;
-            border: 2px #fff solid;
-            &:hover {
-                border: 2px yellow solid;
-                a {
-                    color: yellow ;
-                }
-                &::before {
-                    animation: slide 0.3s ease-in-out forwards ;
-                }
-                left: 0;
-            }
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 200px;
-                width: 10px;
-                background: yellow ;
-                z-index: 20;
-                transform: translateX(-205px);
-            }
-            a {
-                font-size: calc(12px + 0.5vh);
-                color: white;
-                position: relative;
-                z-index: 10;
-            }
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  overflow: hidden;
+  .buttoncontainer {
+    .button {
+      padding: 5px 10px;
+      margin: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      background: #ebebeb;
+      border-radius: 3px;
+      text-align: center;
+      box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.2);
+      &:hover {
+        opacity: 0.5;
+      }
+      a {
+        font-size: calc(12px + 0.5vh);
+        font-weight: 900;
+        color: black;
+        position: relative;
+      }
     }
+  }
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(-15px);
-    }
-    20% {
-        transform: translateX(55px);
-    }
-    80% {
-        transform: translateX(-10px);
-    }
+  0% {
+    transform: translateX(-15px);
+  }
+  20% {
+    transform: translateX(55px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
 
-    100% {
-        transform: translateX(1000px);
-    }
+  100% {
+    transform: translateX(1000px);
+  }
 }
