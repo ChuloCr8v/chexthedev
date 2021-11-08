@@ -8,7 +8,7 @@ const  Buttons = ({contact, setContact}) => {
     <div className={styles.buttons}>
         <div className={styles.buttoncontainer}>
           <button className={styles.button}>
-            <Link href="https://drive.google.com/file/d/1Hf5DMMkn-8b2zB5_VVXyBILw7QEMRu-f/view?usp=drivesdk" >My Resume</Link>
+            <Link href="https://drive.google.com/file/d/1Zz-P6a22xSOko-LlfBpeBRYnfMQu5jGh/view?usp=drivesdk" >My Resume</Link>
           </button>
         </div>
         <div className={styles.buttoncontainer}>
