@@ -1,3 +1,13 @@
 .dark_mode {
-  backdrop-filter: black;
+  backdrop-filter:black;
+}
+
+.container {
+  width: min(90%, 80rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto ;
+  overflow: hidden;
 }

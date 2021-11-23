@@ -76,17 +76,14 @@
     }
 
     .list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+
       .item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 10px 20px;
-        width: 350px;
+        max-width: 350px;
         .logocontainer1,
         .logocontainer2 {
           min-height: 75px;
@@ -216,8 +213,9 @@
     .container {
       margin-bottom: -200px;
       .list {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: grid-start;
       }
     }
   }
